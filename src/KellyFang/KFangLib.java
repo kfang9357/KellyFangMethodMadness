@@ -54,23 +54,36 @@ public class KFangLib {
         return sum;
     }
 
-    public static int leastCommonMultiple(int num1, int num2, int num3) //incomplete
+    public static String datestr(String str)
+    {
+        String date = str.substring(3,5);
+        String month = str.substring(0,2);
+        String year = str.substring(6,10);
+        String result = date+"-"+month+"-"+year;
+        return result;
+    }
+
+   /* public static int leastCommonMultiple(int num1, int num2, int num3) //incomplete
     {
         int lcm = 0;
         if ((num1%num2 == 0)&&(num1%num3 == 0)) {
             lcm = num1;
         }
-        if ((num2%num1 == 0)&&(num2%num3 == 0)) {
+        else if ((num2%num1 == 0)&&(num2%num3 == 0)) {
             lcm = num2;
         }
-        if ((num3%num1 == 0)&&(num3%num2 == 0)) {
+        else if ((num3%num1 == 0)&&(num3%num2 == 0)) {
             lcm = num3;
         }
         return lcm;
-    }
-
-   // public static int stringUnion(String str1, String str2, String str3)
+    }**/
+    public static int stringUnion(String str1, String str2, String str3)
     {
+        int length1 = str1.length();
+        int length2 = str2.length();
+        int length3 = str3.length();
+        int count = 0;
+
 
 
     }
