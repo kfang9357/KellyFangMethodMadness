@@ -15,7 +15,7 @@ public class KFangLib {
 
         if ((first == num)||(second == num))               //When the loop terminates, the method will compare num to second or first, both which are Fibonacci numbers
         {
-            return true;                                   //num is a fibonacci number if it is equal to first or second, which are the fibonacci numbers equal to or greater than num
+            return true;                                   //num is a fibonacci number if it is equal to first or second, which are the closest fibonacci numbers equal to or greater than num
         }
 
         else                                               //num is not a fibonacci number if it is not equal to first or second
@@ -63,13 +63,13 @@ public class KFangLib {
         return result;                                  //Return the new String variable result
     }
 
-    public static String cutOut(String mainString, String subString)        //Method takes a long string and a shorter one, returning the first string without the first occurence of the second in the first.
+    public static String cutOut(String mainString, String subString)        //Method takes a long string and a shorter one, returning the first string without the first occurrence of the second in the first.
     {
-        String newString = "";                                              //A new String variable is created to store the mainString without the occurence of the subString
+        String newString = "";                                              //A new String variable is created to store the mainString without the occurrence of the subString
         int lengthSub = subString.length();                                 //we use the length of the subString to know which index of the mainString, the second part will begin
-        int firstOccurence = mainString.indexOf(subString);                 //the indexOf of a substring will give the index of the first occurence of subString in mainString
+        int firstOccurrence = mainString.indexOf(subString);                 //the indexOf of a substring will give the index of the first occurrence of subString in mainString
 
-        newString = mainString.substring(0,firstOccurence) + mainString.substring(firstOccurence+lengthSub);        //the newString will store the first part of mainString up to before subString appears and the second part of mainString after subString in the mainString ends.
+        newString = mainString.substring(0,firstOccurrence) + mainString.substring(firstOccurrence+lengthSub);        //the newString will store the first part of mainString up to before subString appears and the second part of mainString after subString in the mainString ends.
 
         return newString;                                                    //the newString is returned
     }
