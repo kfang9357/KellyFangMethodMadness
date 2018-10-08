@@ -2,12 +2,12 @@ package KellyFang;
 
 public class KFangLib {
 
-    public static boolean isFibonacci(int num)
+    public static boolean isFibonacci(int num)             //input for this method will be an integer, output will be true or false; purpose of this method is to determine if it is in the Fibonacci series.
     {
         int first = 1;
         int second  = 1;
 
-        while ((first<num)&&(second<num))
+        while ((first<num)&&(second<num))                  //this loop 
         {
             second = first + second;
             first = first + second;
