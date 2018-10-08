@@ -2,7 +2,7 @@ package KellyFang;
 
 import static KellyFang.KFangLib.*;
 
-public class Main {
+class testFile {
 
     public static void main(String[] args) {
         System.out.println(KFangLib.isFibonacci(5));                                        //5 is in the fibonacci series: 1+1=2, 2+3=5. True should be returned
